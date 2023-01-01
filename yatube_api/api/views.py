@@ -8,7 +8,7 @@ from rest_framework.permissions import (IsAuthenticated,
 from api.permissions import IsAuthorOrReadOnly
 from api.serializers import (CommentSerializer, FollowSerializer,
                              GroupSerializer, PostSerializer, UserSerializer)
-from posts.models import Follow, Group, Post, User
+from posts.models import Group, Post, User
 
 
 class PostViewSet(viewsets.ModelViewSet):
